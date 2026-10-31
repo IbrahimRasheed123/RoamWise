@@ -153,6 +153,9 @@ In `metrics.py`, we inspect the handoff event sequence. If a handoff from $AP_B 
 **Correct Response:**
 > "A 15 dBm margin would indeed eliminate ping-pong, but it creates the **'Sticky Client' problem**. The device clings to an increasingly weak AP even when a much better AP is available, causing high latency, packet loss, and eventual connection dropouts. RoamWise adapts the margin dynamically so it is wide only when noise requires it, and tight when smooth transitions are needed."
 
+
+
+
 ### Trap 3: "Are your simulation results hardcoded?"
 **Correct Response:**
 > "Not at all, sir/ma'am. Every measurement is dynamically calculated at runtime based on the client's $(x, y)$ Euclidean coordinates, the Log-Distance path loss equation, and Gaussian noise generated with a seed. You can change the seed, adjust the client velocity, or modify noise standard deviation in the Streamlit sidebar, and the simulation recalculates in real-time."
